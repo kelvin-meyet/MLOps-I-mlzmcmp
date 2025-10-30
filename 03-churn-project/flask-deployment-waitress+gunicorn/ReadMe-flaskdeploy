@@ -1,8 +1,12 @@
 
-# Clone the repo
-- install requirements
+# Instructions on Running the churn model:
 
-#Waitress - This will run the app
+- Clone the repo 
+- install requirements 
+
+# Waitress - This will run the app:
+on your terminal run the code below
 - waitress-serve --listen=0.0.0.0:port predict_svc:app
 
-open the marketsvc.ipynb and run the chunks to interact with the deployed model 
+open the marketsvc.ipynb and run the chunks to interact with the deployed model
+- You can alter the customer details for different prediction responses
