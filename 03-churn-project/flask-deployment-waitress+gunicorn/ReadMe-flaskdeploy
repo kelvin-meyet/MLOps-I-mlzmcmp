@@ -10,3 +10,8 @@ on your terminal run the code below
 
 open the marketsvc.ipynb and run the chunks to interact with the deployed model
 - You can alter the customer details for different prediction responses
+
+
+
+Todo: 
+- Instruction on using gunicorn with windows sub system for linux (WSL) for deployment
