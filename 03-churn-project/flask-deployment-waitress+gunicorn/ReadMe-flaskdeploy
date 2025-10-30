@@ -2,16 +2,19 @@
 # Instructions on Running the churn model:
 
 - Clone the repo 
-- install requirements 
+- cd/churn_project/flask-deployment-waitress+gunicorn
+- pip install -r requirements.txt
 
-# Waitress - This will run the app:
-on your terminal run the code below
+# For Windows users, Waitress will run the app:
+ on your terminal run the code below
 - waitress-serve --listen=0.0.0.0:port predict_svc:app
 
 open the marketsvc.ipynb and run the chunks to interact with the deployed model
 - You can alter the customer details for different prediction responses
 
 
-
-Todo: 
-- Instruction on using gunicorn with windows sub system for linux (WSL) for deployment
+# Instruction on using gunicorn with windows sub system for linux (WSL) for deployment
+- Install wsl on your windows computer.
+  Follow instructions outlined here to install wsl for your system -> https://learn.microsoft.com/en-us/windows/wsl/install 
+- copy all files in /flask-deployment-waitress+gunicorn from your local onto your wsl home dir and run 
+- gunicorn --bind 0.0.0.0:9696 predict_svc:app
