@@ -1,5 +1,7 @@
 numpy
 pandas
 sklearn
-waitress 
 flask 
+
+waitress   # for windows
+gunicorn  #for wsl or linux
