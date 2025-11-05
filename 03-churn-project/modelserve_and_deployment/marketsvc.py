@@ -5,7 +5,7 @@ url = "http://localhost:9696/predict"
 
 customer = {
     "gender": "female",
-    "seniorcitizen": 0,
+    "seniorcitizen": 0, 
     "partner": "yes",
     "dependents": "no",
     "phoneservice": "no",

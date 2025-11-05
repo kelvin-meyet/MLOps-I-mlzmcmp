@@ -69,16 +69,19 @@ def predict_single(customer):
 def predict(customer: Customer) -> PredictResponse:
     churn_proba = predict_single(customer.dict())
     #churn_proba.round(2)
+
+    #action = "send email with promo" if churn_proba >= 0.5 else "Do not send email"
     
     return PredictResponse(
        churn_probability=churn_proba, 
-       churn = bool(churn_proba >= 0.5)
+       churn = bool(churn_proba >= 0.5),
+       #action = str(action)
     )
 
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=9696)
 
-
+  
 
 
 
